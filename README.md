@@ -22,6 +22,11 @@ red=[151,50,50]
 white=[251,251,251]
 yellow=[225,225,50]
 ```
+## Usage
+Run `img:give` to get the book.
+</br>Run `img:items/player/{itemName}` to set blocks at centered your position at your current elevation.
+</br>Run `img:items/sky/{itemName}` to set blocks at centered your position at y-level 319 (max) elevation.
+
 ## Installation
 Use an existing world that is already setup to use the datapack.
 1. Download the [zip file](https://github.com/kirbycope/map-markers-java/archive/refs/heads/main.zip)
