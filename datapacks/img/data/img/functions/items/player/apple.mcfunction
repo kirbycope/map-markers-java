@@ -75,7 +75,7 @@ setblock ~-4 ~ ~1 red_concrete
 setblock ~-4 ~ ~2 red_concrete
 setblock ~-4 ~ ~3 red_concrete
 setblock ~-4 ~ ~4 red_concrete
-setblock ~-4 ~ ~5 brown_concrete
+setblock ~-4 ~ ~5 black_concrete
 setblock ~-4 ~ ~6 air
 setblock ~-4 ~ ~7 air
 setblock ~-3 ~ ~-8 air
@@ -92,7 +92,7 @@ setblock ~-3 ~ ~2 red_concrete
 setblock ~-3 ~ ~3 red_concrete
 setblock ~-3 ~ ~4 red_concrete
 setblock ~-3 ~ ~5 red_concrete
-setblock ~-3 ~ ~6 brown_concrete
+setblock ~-3 ~ ~6 black_concrete
 setblock ~-3 ~ ~7 air
 setblock ~-2 ~ ~-8 air
 setblock ~-2 ~ ~-7 air
@@ -156,7 +156,7 @@ setblock ~1 ~ ~2 red_concrete
 setblock ~1 ~ ~3 red_concrete
 setblock ~1 ~ ~4 red_concrete
 setblock ~1 ~ ~5 red_concrete
-setblock ~1 ~ ~6 brown_concrete
+setblock ~1 ~ ~6 black_concrete
 setblock ~1 ~ ~7 air
 setblock ~2 ~ ~-8 air
 setblock ~2 ~ ~-7 air
@@ -172,7 +172,7 @@ setblock ~2 ~ ~2 red_concrete
 setblock ~2 ~ ~3 red_concrete
 setblock ~2 ~ ~4 red_concrete
 setblock ~2 ~ ~5 red_concrete
-setblock ~2 ~ ~6 brown_concrete
+setblock ~2 ~ ~6 black_concrete
 setblock ~2 ~ ~7 air
 setblock ~3 ~ ~-8 air
 setblock ~3 ~ ~-7 air
@@ -187,7 +187,7 @@ setblock ~3 ~ ~1 orange_concrete
 setblock ~3 ~ ~2 orange_concrete
 setblock ~3 ~ ~3 red_concrete
 setblock ~3 ~ ~4 red_concrete
-setblock ~3 ~ ~5 brown_concrete
+setblock ~3 ~ ~5 black_concrete
 setblock ~3 ~ ~6 air
 setblock ~3 ~ ~7 air
 setblock ~4 ~ ~-8 air
@@ -201,8 +201,8 @@ setblock ~4 ~ ~-1 red_concrete
 setblock ~4 ~ ~0 red_concrete
 setblock ~4 ~ ~1 red_concrete
 setblock ~4 ~ ~2 red_concrete
-setblock ~4 ~ ~3 brown_concrete
-setblock ~4 ~ ~4 brown_concrete
+setblock ~4 ~ ~3 black_concrete
+setblock ~4 ~ ~4 black_concrete
 setblock ~4 ~ ~5 air
 setblock ~4 ~ ~6 air
 setblock ~4 ~ ~7 air
@@ -214,9 +214,9 @@ setblock ~5 ~ ~-4 air
 setblock ~5 ~ ~-3 air
 setblock ~5 ~ ~-2 red_concrete
 setblock ~5 ~ ~-1 red_concrete
-setblock ~5 ~ ~0 brown_concrete
-setblock ~5 ~ ~1 brown_concrete
-setblock ~5 ~ ~2 brown_concrete
+setblock ~5 ~ ~0 black_concrete
+setblock ~5 ~ ~1 black_concrete
+setblock ~5 ~ ~2 black_concrete
 setblock ~5 ~ ~3 air
 setblock ~5 ~ ~4 air
 setblock ~5 ~ ~5 air

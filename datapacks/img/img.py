@@ -7,104 +7,126 @@ import numpy as np
 
 
 #######################################################################
-concrete_black=[0,0,0]
-concrete_blue=[45,47,144]
-concrete_brown=[97,61,33]
-concrete_cyan=[21,119,136]
-concrete_gray=[54,57,61]
-concrete_green=[74,92,37]
-concrete_light_blue=[36,138,200]
-concrete_light_gray=[126,126,116]
-concrete_lime=[96,170,26]
-concrete_magenta=[169,48,159]
-concrete_orange=[225,97,0]
-concrete_pink=[211,100,141]
-concrete_purple=[100,31,156]
-concrete_red=[142,32,32]
-concrete_white=[208,214,215]
-concrete_yellow=[241,175,21]
-list_of_colors = [concrete_black, concrete_blue, concrete_brown, concrete_cyan, concrete_gray, concrete_green, concrete_light_blue, concrete_light_gray, concrete_lime, concrete_magenta, concrete_orange, concrete_pink, concrete_purple, concrete_red, concrete_white, concrete_yellow]
+black=[25,25,25]
+blue=[50,75,175]
+brown=[100,75,50]
+cyan=[75,125,151]
+gray=[75,75,75]
+green=[100,125,50]
+light_blue=[100,151,213]
+light_gray=[151,151,151]
+lime=[125,201,25]
+magenta=[175,75,213]
+orange=[213,125,50]
+pink=[238,125,162]
+purple=[125,62,175]
+red=[151,50,50]
+white=[251,251,251]
+yellow=[225,225,50]
+basic_colors = [black, blue, brown, cyan, gray, green, light_blue, light_gray, lime, magenta, orange, pink, purple, red, white, yellow]
 #######################################################################
- 
+sea_lantern = [251,248,241]
+glowstone = [243,229,160]
+shroomlight = [151,50,50]
+ochre_froglight = [243,229,160]
+verdan_froglight = [125,164,148]
+pearlescent_froglight = [238,125,162]
+light_colors = [sea_lantern, glowstone, shroomlight, ochre_froglight, verdan_froglight, pearlescent_froglight]
+extended_colors = basic_colors + light_colors
+#######################################################################
 
-def closest(color):
+
+def closest(color, img_type):
     """ https://stackoverflow.com/a/54244301/1106708 """
-    colors = np.array(list_of_colors)
+    if img_type == "player": colors = np.array(extended_colors)
+    if img_type == "sky": colors = np.array(basic_colors)
     color = np.array(color)
     distances = np.sqrt(np.sum((colors-color)**2,axis=1))
     index_of_smallest = np.where(distances==np.amin(distances))
     smallest_distance = colors[index_of_smallest]
-    return smallest_distance
+    return smallest_distance[0]
 
 
 def concrete_art(str_closest_color):
-    if str_closest_color == str(concrete_black).replace(" ",""):
+    if str_closest_color == str(black).replace(" ",""):
         return "black_concrete"
-    elif str_closest_color == str(concrete_blue).replace(" ",""):
+    elif str_closest_color == str(blue).replace(" ",""):
         return "blue_concrete"
-    elif str_closest_color == str(concrete_brown).replace(" ",""):
+    elif str_closest_color == str(brown).replace(" ",""):
         return "brown_concrete"
-    elif str_closest_color == str(concrete_cyan).replace(" ",""):
+    elif str_closest_color == str(cyan).replace(" ",""):
         return "cyan_concrete"
-    elif str_closest_color == str(concrete_gray).replace(" ",""):
+    elif str_closest_color == str(gray).replace(" ",""):
         return "gray_concrete"
-    elif str_closest_color == str(concrete_green).replace(" ",""):
+    elif str_closest_color == str(green).replace(" ",""):
         return "green_concrete"
-    elif str_closest_color == str(concrete_light_blue).replace(" ",""):
+    elif str_closest_color == str(light_blue).replace(" ",""):
         return "light_blue_concrete"
-    elif str_closest_color == str(concrete_light_gray).replace(" ",""):
+    elif str_closest_color == str(light_gray).replace(" ",""):
         return "light_gray_concrete"
-    elif str_closest_color == str(concrete_lime).replace(" ",""):
+    elif str_closest_color == str(lime).replace(" ",""):
         return "lime_concrete"
-    elif str_closest_color == str(concrete_magenta).replace(" ",""):
+    elif str_closest_color == str(magenta).replace(" ",""):
         return "magenta_concrete"
-    elif str_closest_color == str(concrete_orange).replace(" ",""):
+    elif str_closest_color == str(orange).replace(" ",""):
         return "orange_concrete"
-    elif str_closest_color == str(concrete_pink).replace(" ",""):
+    elif str_closest_color == str(pink).replace(" ",""):
         return "pink_concrete"
-    elif str_closest_color == str(concrete_purple).replace(" ",""):
+    elif str_closest_color == str(purple).replace(" ",""):
         return "purple_concrete"
-    elif str_closest_color == str(concrete_red).replace(" ",""):
+    elif str_closest_color == str(red).replace(" ",""):
         return "red_concrete"
-    elif str_closest_color == str(concrete_white).replace(" ",""):
+    elif str_closest_color == str(white).replace(" ",""):
         return "white_concrete"
-    elif str_closest_color == str(concrete_yellow).replace(" ",""):
+    elif str_closest_color == str(yellow).replace(" ",""):
         return "yellow_concrete"
+    elif str_closest_color == str(sea_lantern).replace(" ",""):
+        return "sea_lantern"
+    elif str_closest_color == str(glowstone).replace(" ",""):
+        return "glowstone"
+    elif str_closest_color == str(shroomlight).replace(" ",""):
+        return "shroomlight"
+    elif str_closest_color == str(ochre_froglight).replace(" ",""):
+        return "ochre_froglight"
+    elif str_closest_color == str(verdan_froglight).replace(" ",""):
+        return "verdan_froglight"
+    elif str_closest_color == str(pearlescent_froglight).replace(" ",""):
+        return "pearlescent_froglight"
 
 
 def glass_art(str_closest_color):
-    if str_closest_color == str(concrete_black).replace(" ",""):
-        return"black_stained_glass"
-    elif str_closest_color == str(concrete_blue).replace(" ",""):
-        return"blue_stained_glass"
-    elif str_closest_color == str(concrete_brown).replace(" ",""):
-        return"brown_stained_glass"
-    elif str_closest_color == str(concrete_cyan).replace(" ",""):
-        return"cyan_stained_glass	"
-    elif str_closest_color == str(concrete_gray).replace(" ",""):
-        return"gray_stained_glass"
-    elif str_closest_color == str(concrete_green).replace(" ",""):
-        return"green_stained_glass"
-    elif str_closest_color == str(concrete_light_blue).replace(" ",""):
-        return"light_blue_stained_glass"
-    elif str_closest_color == str(concrete_light_gray).replace(" ",""):
-        return"light_gray_stained_glass"
-    elif str_closest_color == str(concrete_lime).replace(" ",""):
-        return"lime_stained_glass"
-    elif str_closest_color == str(concrete_magenta).replace(" ",""):
-        return"magenta_stained_glass"
-    elif str_closest_color == str(concrete_orange).replace(" ",""):
-        return"orange_stained_glass"
-    elif str_closest_color == str(concrete_pink).replace(" ",""):
-        return"pink_stained_glass"
-    elif str_closest_color == str(concrete_purple).replace(" ",""):
-        return"purple_stained_glass"
-    elif str_closest_color == str(concrete_red).replace(" ",""):
-        return"red_stained_glass"
-    elif str_closest_color == str(concrete_white).replace(" ",""):
-        return"white_stained_glass"
-    elif str_closest_color == str(concrete_yellow).replace(" ",""):
-        return"yellow_stained_glass"
+    if str_closest_color == str(black).replace(" ",""):
+        return "black_stained_glass"
+    elif str_closest_color == str(blue).replace(" ",""):
+        return "blue_stained_glass"
+    elif str_closest_color == str(brown).replace(" ",""):
+        return "brown_stained_glass"
+    elif str_closest_color == str(cyan).replace(" ",""):
+        return "cyan_stained_glass	"
+    elif str_closest_color == str(gray).replace(" ",""):
+        return "gray_stained_glass"
+    elif str_closest_color == str(green).replace(" ",""):
+        return "green_stained_glass"
+    elif str_closest_color == str(light_blue).replace(" ",""):
+        return "light_blue_stained_glass"
+    elif str_closest_color == str(light_gray).replace(" ",""):
+        return "light_gray_stained_glass"
+    elif str_closest_color == str(lime).replace(" ",""):
+        return "lime_stained_glass"
+    elif str_closest_color == str(magenta).replace(" ",""):
+        return "magenta_stained_glass"
+    elif str_closest_color == str(orange).replace(" ",""):
+        return "orange_stained_glass"
+    elif str_closest_color == str(pink).replace(" ",""):
+        return "pink_stained_glass"
+    elif str_closest_color == str(purple).replace(" ",""):
+        return "purple_stained_glass"
+    elif str_closest_color == str(red).replace(" ",""):
+        return "red_stained_glass"
+    elif str_closest_color == str(white).replace(" ",""):
+        return "white_stained_glass"
+    elif str_closest_color == str(yellow).replace(" ",""):
+        return "yellow_stained_glass"
 
 
 def create_mcfunction(image_file_name, img_type):
@@ -121,7 +143,7 @@ def create_mcfunction(image_file_name, img_type):
             for y in range(w):
                 rgb = pix[x, y]
                 color = [rgb[0], rgb[1], rgb[2]]
-                closest_color = closest(color)
+                closest_color = closest(color, img_type)
                 if img_type == "player": func = f"setblock ~{x-offset} ~ ~{y-offset} "
                 elif img_type == "sky": func = f"setblock ~{x-offset} 319 ~{y-offset} "
                 str_closest_color = str(closest_color).replace("[[", "[").replace("   ",",").replace("  ", ",").replace(" ",",").replace("]]", "]")
@@ -131,6 +153,7 @@ def create_mcfunction(image_file_name, img_type):
                     if img_type == "player": func+=concrete_art(str_closest_color)
                     elif img_type == "sky": func+=glass_art(str_closest_color)
                 mcfunction.write(func+'\n')
+
 
 create_mcfunction("apple.png", "player")
 create_mcfunction("apple.png", "sky")
