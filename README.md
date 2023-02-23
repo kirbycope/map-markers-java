@@ -2,9 +2,26 @@
 
 # map-markers-java
 Use a Python script to create map art in Minecraft Java. The color pallet is simple; concrete for the ground blocks and glass for the sky blocks. Glass blocks have the same color on the map as their concrete counterparts but do not cast a shadow on the ground below.
-
-![colors](/colors.png)
-
+</br>![colors](/colors.png)</br>
+I took the (above) screenshot and used the color picker tool in [Paint.Net](https://www.getpaint.net/index.html) to get the RGB values.
+```
+black=[25,25,25]
+blue=[50,75,175]
+brown=[100,75,50]
+cyan=[75,125,151]
+gray=[75,75,75]
+green=[100,125,50]
+light_blue=[100,151,213]
+light_gray=[151,151,151]
+lime=[125,201,25]
+magenta=[175,75,213]
+orange=[213,125,50]
+pink=[238,125,162]
+purple=[125,62,175]
+red=[151,50,50]
+white=[251,251,251]
+yellow=[225,225,50]
+```
 ## Installation
 Use an existing world that is already setup to use the datapack.
 1. Download the [zip file](https://github.com/kirbycope/map-markers-java/archive/refs/heads/main.zip)
