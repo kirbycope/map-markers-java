@@ -1,9 +1,16 @@
+# python -m pip install --upgrade pip
+# python -m pip install --upgrade Pillow
 from PIL import Image
+# pip install numpy
 import numpy as np
 
+#######################################################################
+image_file_name = "kirbycope.png"
+#######################################################################
 
-# https://stackoverflow.com/a/54244301/1106708
+
 def closest(colors, color):
+    """ https://stackoverflow.com/a/54244301/1106708 """
     colors = np.array(colors)
     color = np.array(color)
     distances = np.sqrt(np.sum((colors-color)**2,axis=1))
@@ -101,32 +108,39 @@ concrete_white=[208,214,215]
 concrete_yellow=[241,175,21]
 list_of_colors = [concrete_black, concrete_blue, concrete_brown, concrete_cyan, concrete_gray, concrete_green, concrete_light_blue, concrete_light_gray, concrete_lime, concrete_magenta, concrete_orange, concrete_pink, concrete_purple, concrete_red, concrete_white, concrete_yellow]
 
-#image_file_name = "C:\\GitHub\\bedrock-samples\\resource_pack\\textures\\items\\record_blocks.png"
-image_file_name = "kirbycope_face_16.png"
-image_file_name.split(".")[0]
-#img_type = "ground"
-img_type = "sky"
-
 im = Image.open(image_file_name)
 pix = im.load()
 h = im.size[0]
 w = im.size[1]
 if h == 16 and w == 16:
     offset = 8
-for x in range(h):
-    for y in range(w):
-        try:
+
+fileName = f"datapacks/img/data/img/functions/items/player/{image_file_name.split('.')[0]}.mcfunction"
+with open(fileName, 'a') as mcfunction:
+    for x in range(h):
+        for y in range(w):
             rgb = pix[x, y]
             color = [rgb[0], rgb[1], rgb[2]]
             closest_color = closest(list_of_colors, color)
-            if img_type == "ground": func = f"setblock ~{x-offset} ~ ~{y-offset} "
-            elif img_type == "sky": func = f"setblock ~{x-offset} 319 ~{y-offset} "
+            func = f"setblock ~{x-offset} ~ ~{y-offset} "
             str_closest_color = str(closest_color).replace("[[", "[").replace("   ",",").replace("  ", ",").replace(" ",",").replace("]]", "]")
             if str(rgb) == "(0, 0, 0, 0)" :
                 func+="air"
             else:
-                if img_type == "ground": func+=concrete_art(str_closest_color)
-                elif img_type == "sky": func+=glass_art(str_closest_color)
-            print(func)
-        except:
-            print()
+                func+=concrete_art(str_closest_color)
+            mcfunction.write(func+'\n')
+
+fileName = f"datapacks/img/data/img/functions/items/sky/{image_file_name.split('.')[0]}.mcfunction"
+with open(fileName, 'a') as mcfunction:
+    for x in range(h):
+        for y in range(w):
+            rgb = pix[x, y]
+            color = [rgb[0], rgb[1], rgb[2]]
+            closest_color = closest(list_of_colors, color)
+            func = f"setblock ~{x-offset} 319 ~{y-offset} "
+            str_closest_color = str(closest_color).replace("[[", "[").replace("   ",",").replace("  ", ",").replace(" ",",").replace("]]", "]")
+            if str(rgb) == "(0, 0, 0, 0)" :
+                func+="air"
+            else:
+                func+=glass_art(str_closest_color)
+            mcfunction.write(func+'\n')
