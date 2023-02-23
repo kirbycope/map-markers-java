@@ -56,7 +56,7 @@ setblock ~-5 ~ ~-2 black_concrete
 setblock ~-5 ~ ~-1 black_concrete
 setblock ~-5 ~ ~0 gray_concrete
 setblock ~-5 ~ ~1 white_concrete
-setblock ~-5 ~ ~2 sea_lantern
+setblock ~-5 ~ ~2 white_concrete
 setblock ~-5 ~ ~3 light_gray_concrete
 setblock ~-5 ~ ~4 black_concrete
 setblock ~-5 ~ ~5 air
@@ -72,8 +72,8 @@ setblock ~-4 ~ ~-2 black_concrete
 setblock ~-4 ~ ~-1 black_concrete
 setblock ~-4 ~ ~0 black_concrete
 setblock ~-4 ~ ~1 white_concrete
-setblock ~-4 ~ ~2 sea_lantern
-setblock ~-4 ~ ~3 sea_lantern
+setblock ~-4 ~ ~2 white_concrete
+setblock ~-4 ~ ~3 white_concrete
 setblock ~-4 ~ ~4 black_concrete
 setblock ~-4 ~ ~5 air
 setblock ~-4 ~ ~6 air
@@ -89,7 +89,7 @@ setblock ~-3 ~ ~-1 black_concrete
 setblock ~-3 ~ ~0 black_concrete
 setblock ~-3 ~ ~1 black_concrete
 setblock ~-3 ~ ~2 white_concrete
-setblock ~-3 ~ ~3 sea_lantern
+setblock ~-3 ~ ~3 white_concrete
 setblock ~-3 ~ ~4 light_gray_concrete
 setblock ~-3 ~ ~5 black_concrete
 setblock ~-3 ~ ~6 air
@@ -105,8 +105,8 @@ setblock ~-2 ~ ~-1 black_concrete
 setblock ~-2 ~ ~0 black_concrete
 setblock ~-2 ~ ~1 black_concrete
 setblock ~-2 ~ ~2 white_concrete
-setblock ~-2 ~ ~3 sea_lantern
-setblock ~-2 ~ ~4 sea_lantern
+setblock ~-2 ~ ~3 white_concrete
+setblock ~-2 ~ ~4 white_concrete
 setblock ~-2 ~ ~5 black_concrete
 setblock ~-2 ~ ~6 air
 setblock ~-2 ~ ~7 air
@@ -136,7 +136,7 @@ setblock ~0 ~ ~-2 black_concrete
 setblock ~0 ~ ~-1 red_concrete
 setblock ~0 ~ ~0 black_concrete
 setblock ~0 ~ ~1 black_concrete
-setblock ~0 ~ ~2 sea_lantern
+setblock ~0 ~ ~2 white_concrete
 setblock ~0 ~ ~3 light_gray_concrete
 setblock ~0 ~ ~4 light_gray_concrete
 setblock ~0 ~ ~5 black_concrete
@@ -152,7 +152,7 @@ setblock ~1 ~ ~-2 red_concrete
 setblock ~1 ~ ~-1 red_concrete
 setblock ~1 ~ ~0 black_concrete
 setblock ~1 ~ ~1 black_concrete
-setblock ~1 ~ ~2 sea_lantern
+setblock ~1 ~ ~2 white_concrete
 setblock ~1 ~ ~3 light_gray_concrete
 setblock ~1 ~ ~4 light_gray_concrete
 setblock ~1 ~ ~5 black_concrete

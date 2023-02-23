@@ -32,7 +32,7 @@ ochre_froglight = [243,229,160]
 verdan_froglight = [125,164,148]
 pearlescent_froglight = [238,125,162]
 light_colors = [sea_lantern, glowstone, shroomlight, ochre_froglight, verdan_froglight, pearlescent_froglight]
-extended_colors = basic_colors + light_colors
+extended_colors = basic_colors# + light_colors
 #######################################################################
 
 

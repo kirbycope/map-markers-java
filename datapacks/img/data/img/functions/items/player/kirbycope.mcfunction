@@ -6,8 +6,8 @@ setblock ~-8 ~ ~-4 brown_concrete
 setblock ~-8 ~ ~-3 brown_concrete
 setblock ~-8 ~ ~-2 pink_concrete
 setblock ~-8 ~ ~-1 pink_concrete
-setblock ~-8 ~ ~0 glowstone
-setblock ~-8 ~ ~1 glowstone
+setblock ~-8 ~ ~0 pink_concrete
+setblock ~-8 ~ ~1 pink_concrete
 setblock ~-8 ~ ~2 brown_concrete
 setblock ~-8 ~ ~3 brown_concrete
 setblock ~-8 ~ ~4 black_concrete
@@ -22,8 +22,8 @@ setblock ~-7 ~ ~-4 brown_concrete
 setblock ~-7 ~ ~-3 brown_concrete
 setblock ~-7 ~ ~-2 pink_concrete
 setblock ~-7 ~ ~-1 pink_concrete
-setblock ~-7 ~ ~0 glowstone
-setblock ~-7 ~ ~1 glowstone
+setblock ~-7 ~ ~0 pink_concrete
+setblock ~-7 ~ ~1 pink_concrete
 setblock ~-7 ~ ~2 brown_concrete
 setblock ~-7 ~ ~3 brown_concrete
 setblock ~-7 ~ ~4 black_concrete
@@ -230,8 +230,8 @@ setblock ~6 ~ ~-4 brown_concrete
 setblock ~6 ~ ~-3 brown_concrete
 setblock ~6 ~ ~-2 pink_concrete
 setblock ~6 ~ ~-1 pink_concrete
-setblock ~6 ~ ~0 glowstone
-setblock ~6 ~ ~1 glowstone
+setblock ~6 ~ ~0 pink_concrete
+setblock ~6 ~ ~1 pink_concrete
 setblock ~6 ~ ~2 brown_concrete
 setblock ~6 ~ ~3 brown_concrete
 setblock ~6 ~ ~4 black_concrete
@@ -246,8 +246,8 @@ setblock ~7 ~ ~-4 brown_concrete
 setblock ~7 ~ ~-3 brown_concrete
 setblock ~7 ~ ~-2 pink_concrete
 setblock ~7 ~ ~-1 pink_concrete
-setblock ~7 ~ ~0 glowstone
-setblock ~7 ~ ~1 glowstone
+setblock ~7 ~ ~0 pink_concrete
+setblock ~7 ~ ~1 pink_concrete
 setblock ~7 ~ ~2 brown_concrete
 setblock ~7 ~ ~3 brown_concrete
 setblock ~7 ~ ~4 black_concrete
