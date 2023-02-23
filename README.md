@@ -1,6 +1,9 @@
-# map-markers-java
-Use a Python script to create map art in Minecraft Java.
 ![map-markers](/map-markers.png)
+
+# map-markers-java
+Use a Python script to create map art in Minecraft Java. The color pallet is simple; concrete for the ground blocks and glass for the sky blocks. Glass blocks have the same color on the map as their concrete counterparts but do not cast a shadow on the ground below.
+
+![colors](/colors.png)
 
 ## Installation
 Use an existing world that is already setup to use the datapack.
