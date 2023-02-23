@@ -24,9 +24,7 @@ Running the Python script will create new `.mcfunction` files in the datapack fo
 1. Run the python script (use the F5 key or Play button)
 
 ### Package New Images into Datapack
-To play on other worlds, you'll want to package up the datapack.
-1. Archive the "datapacks/img" folder
-1. See next section for installation
+In order to play on other worlds, you'll want to package up the datapack. Archive (`.zip`) the "datapacks/img" folder.
 
 ## Datapack Installation
 Use this datapack with your own worlds.
