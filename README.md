@@ -35,7 +35,7 @@ This data pack is part of a game save to facilitate testing, download the save a
 
 ### Creating New Images
 Running the Python script will create new `.mcfunction` files in the datapack for you to use in-game.
-1. Copy your 16x16 `.png` file to the root of the save folder
+1. Copy your `.png` file to the root of the save folder
 1. Open the save folder in [VS Code](https://code.visualstudio.com/)
 1. Open the "img.py file"
    - The Python script has some dependencies:

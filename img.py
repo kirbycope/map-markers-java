@@ -112,8 +112,7 @@ def create_mcfunction(image_file_name, img_type):
     pix = im.load()
     h = im.size[0]
     w = im.size[1]
-    if h == 16 and w == 16:
-        offset = 8
+    offset = (h+w)//4
     fileName = f"datapacks/img/data/img/functions/items/{img_type}/{image_file_name.split('.')[0]}.mcfunction"
     os.remove(fileName)
     with open(fileName, 'a') as mcfunction:
