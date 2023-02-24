@@ -25,22 +25,11 @@ white=[251,251,251]
 yellow=[225,225,50]
 basic_colors = [black, blue, brown, cyan, gray, green, light_blue, light_gray, lime, magenta, orange, pink, purple, red, white, yellow]
 #######################################################################
-sea_lantern = [251,248,241]
-glowstone = [243,229,160]
-shroomlight = [151,50,50]
-ochre_froglight = [243,229,160]
-verdan_froglight = [125,164,148]
-pearlescent_froglight = [238,125,162]
-light_colors = [sea_lantern, glowstone, shroomlight, ochre_froglight, verdan_froglight, pearlescent_froglight]
-extended_colors = basic_colors + light_colors
-#######################################################################
 
 
-def closest(color, img_type):
+def closest(color):
     """ https://stackoverflow.com/a/54244301/1106708 """
-    #if img_type == "player": colors = np.array(extended_colors)
-    if img_type == "player": colors = np.array(basic_colors)
-    if img_type == "sky": colors = np.array(basic_colors)
+    colors = np.array(basic_colors)
     color = np.array(color)
     distances = np.sqrt(np.sum((colors-color)**2,axis=1))
     index_of_smallest = np.where(distances==np.amin(distances))
@@ -144,7 +133,7 @@ def create_mcfunction(image_file_name, img_type):
             for y in range(w):
                 rgb = pix[x, y]
                 color = [rgb[0], rgb[1], rgb[2]]
-                closest_color = closest(color, img_type)
+                closest_color = closest(color)
                 if img_type == "player": func = f"setblock ~{x-offset} ~ ~{y-offset} "
                 elif img_type == "sky": func = f"setblock ~{x-offset} 319 ~{y-offset} "
                 str_closest_color = str(closest_color).replace("[[", "[").replace("   ",",").replace("  ", ",").replace(" ",",").replace("]]", "]")
@@ -158,9 +147,3 @@ def create_mcfunction(image_file_name, img_type):
 
 create_mcfunction("apple.png", "player")
 create_mcfunction("apple.png", "sky")
-create_mcfunction("compass.png", "player")
-create_mcfunction("compass.png", "sky")
-create_mcfunction("kirbycope.png", "player")
-create_mcfunction("kirbycope.png", "sky")
-create_mcfunction("record.png", "player")
-create_mcfunction("record.png", "sky")
