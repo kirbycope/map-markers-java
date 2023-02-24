@@ -70,18 +70,6 @@ def concrete_art(str_closest_color):
         return "white_concrete"
     elif str_closest_color == str(yellow).replace(" ",""):
         return "yellow_concrete"
-    elif str_closest_color == str(sea_lantern).replace(" ",""):
-        return "sea_lantern"
-    elif str_closest_color == str(glowstone).replace(" ",""):
-        return "glowstone"
-    elif str_closest_color == str(shroomlight).replace(" ",""):
-        return "shroomlight"
-    elif str_closest_color == str(ochre_froglight).replace(" ",""):
-        return "ochre_froglight"
-    elif str_closest_color == str(verdan_froglight).replace(" ",""):
-        return "verdan_froglight"
-    elif str_closest_color == str(pearlescent_froglight).replace(" ",""):
-        return "pearlescent_froglight"
 
 
 def glass_art(str_closest_color):
