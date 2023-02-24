@@ -23,14 +23,15 @@ white=[251,251,251]
 yellow=[225,225,50]
 ```
 ## Usage
-Run `img:give` to get the book.
-</br>Run `img:items/player/{itemName}` to set blocks at centered your position at your current elevation.
-</br>Run `img:items/sky/{itemName}` to set blocks at centered your position at y-level 319 (max) elevation.
+   - Run `img:give` to get the book of examples.
+      - Generated art is not automatically added to this book.
+   - Run `img:items/player/{itemName}` to set blocks at centered your position at your current elevation.
+   - Run `img:items/sky/{itemName}` to set blocks at centered your position at y-level 319 (max) elevation.
 
 ## Installation
-Use an existing world that is already setup to use the datapack.
-1. Download the [zip file](https://github.com/kirbycope/map-markers-java/archive/refs/heads/main.zip)
-1. Unarchive zip contents into the [Saves folder](https://help.minecraft.net/hc/en-us/articles/4409159214605-Managing-Data-and-Game-Storage-in-Minecraft-Java-Edition) of Minecraft Java Edition
+This data pack is part of a game save to facilitate testing, download the save and place it in the [Saves folder](https://help.minecraft.net/hc/en-us/articles/4409159214605-Managing-Data-and-Game-Storage-in-Minecraft-Java-Edition) of Minecraft Java Edition.
+</br>Option 1: Clone this repo using `git`.
+</br>Option 2: Download the [zip file](https://github.com/kirbycope/map-markers-java/archive/refs/heads/main.zip) of this repo.
 
 ### Creating New Images
 Running the Python script will create new `.mcfunction` files in the datapack for you to use in-game.
