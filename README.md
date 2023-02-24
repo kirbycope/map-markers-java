@@ -31,7 +31,7 @@ yellow=[225,225,50]
 ## Installation
 This data pack is part of a game save to facilitate testing, download the save and place it in the [Saves folder](https://help.minecraft.net/hc/en-us/articles/4409159214605-Managing-Data-and-Game-Storage-in-Minecraft-Java-Edition) of Minecraft Java Edition.
 </br>Option 1: Clone this repo using `git`.
-</br>Option 2: Download the [zip file](https://github.com/kirbycope/map-markers-java/archive/refs/heads/main.zip) of this repo.
+</br>Option 2: Download a [zip file](https://github.com/kirbycope/map-markers-java/archive/refs/heads/main.zip) of this repo.
 
 ### Creating New Images
 Running the Python script will create new `.mcfunction` files in the datapack for you to use in-game.
@@ -49,7 +49,7 @@ Running the Python script will create new `.mcfunction` files in the datapack fo
 ### Package New Images into Datapack
 In order to play on other worlds, you'll want to package up the datapack. Archive (`.zip`) the "datapacks/img" folder.
 
-## Datapack Installation
+### Datapack Installation
 Use this datapack with your own worlds.
 1. Download the [zip file](https://github.com/kirbycope/map-markers-java/raw/main/map-markers.zip)
 1. Install for a
